@@ -14,12 +14,13 @@
 	  var scroll = $(window).scrollTop();
 	  var box = $('.header-text').height();
 	  var header = $('header').height();
-
-	  if (scroll >= box - header) {
-	    $("header").addClass("background-header");
-	  } else {
-	    $("header").removeClass("background-header");
-	  }
+	
+	//sinan
+	//   if (scroll >= box - header) {
+	//     $("header").addClass("background-header");
+	//   } else {
+	//     $("header").removeClass("background-header");
+	//   }
 	})
 
 	var width = $(window).width();
@@ -137,7 +138,7 @@
 	       	var target = $(this.hash);
 	        $('html, body').stop().animate({
 	            scrollTop: (target.offset().top) - 79
-	        }, 500, 'swing', function () {
+	        }, 20, 'swing', function () {
 	            window.location.hash = target;
 	            $(document).on("scroll", onScroll);
 	        });

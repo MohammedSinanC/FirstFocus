@@ -390,7 +390,7 @@ Header Style
   border-radius: 0px 0px 25px 25px;
   flex-basis: 100%;
   margin-right: 0px;
-  justify-content: right;
+  justify-content: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -689,15 +689,15 @@ Banner Style
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 244px 0px 120px 0px;
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: url(../images/banner-item-02.jpg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
+  background-image: url(../images/banner-item-01.jpg);
 }
 
 .main-banner .item-3 {
@@ -828,15 +828,15 @@ Services Style
 }
 
 .services .service-item .icon {
-  width: 190px;
-  height: 190px;
+  width: 168px;
+  height: 170px;
   display: inline-block;
   text-align: center;
-  line-height: 190px;
+  line-height: 177px;
   background-color: #290275;
-  border-radius: 50%;
+  border-radius: 32%;
   position: absolute;
-  right: 0;
+  right: 0px;
   top: -95px;
 }
 
