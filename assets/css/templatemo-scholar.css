@@ -710,7 +710,7 @@ Banner Style
   background-size: cover;
   border-radius: 25px;
   padding: 100px 100px;
-  margin-left: 130px;
+  /*margin-left: 130px;*/
 }
 
 .main-banner .item span.category {
@@ -850,8 +850,27 @@ Services Style
   padding: 80px 30px 50px 30px;
   background-color: #f1f0fe;
   margin-bottom: 30px;
-  margin-right: 80px;
+  margin-right: 20px;
+  height: 350px;
   transition: all .4s;
+}
+.service-item .main-content .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 12em; 
+}
+
+.service-item .main-content .read-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .services .service-item h4 {
@@ -860,12 +879,15 @@ Services Style
   margin-bottom: 15px;
   line-height: 30px;
   transition: all .4s;
+  margin-top:0px ;
 }
 
 .services .service-item p {
   color: #4a4a4a;
   margin-bottom: 25px;
 }
+
+
 
 /* 
 ---------------------------------------------

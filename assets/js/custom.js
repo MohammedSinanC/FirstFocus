@@ -160,7 +160,25 @@
 	    });
 	}
 
-
+	document.addEventListener("DOMContentLoaded", function () {
+		const readMoreButtons = document.querySelectorAll(".read-more-btn");
+	  
+		readMoreButtons.forEach((button) => {
+		  button.addEventListener("click", function () {
+			const description = this.previousElementSibling;
+			description.classList.toggle("expanded");
+	  
+			if (description.classList.contains("expanded")) {
+			  description.style.display = "-webkit-box";
+			  this.textContent = "Read Less";
+			} else {
+			  description.style.display = "block";
+			  this.textContent = "Read More";
+			}
+		  });
+		});
+	  });
+	  
 	// Page loading animation
 	$(window).on('load', function() {
 		if($('.cover').length){
