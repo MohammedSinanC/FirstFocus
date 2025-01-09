@@ -115,6 +115,13 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
   height: 1%;
+
+
+}
+
+.home-page-image-tag {
+  height: 500px !important;
+  width: 500px !important;
 }
 
 ul,
@@ -253,6 +260,11 @@ body {
 .main-button a:hover {
   background-color: #7a6ad8;
   color: #fff;
+}
+
+.home-page-image-tag {
+  height: 500px !important;
+  width: 500px !important;
 }
 
 /* 
@@ -822,8 +834,8 @@ Banner Style
   background-position: center center;
   background-size: cover;
   border-radius: 85px 41px 85px 41px;
-  padding: 100px 100px;
-  /*margin-left: 130px;*/
+  padding: 120px 100px;
+  margin-left: 130px;
 }
 
 .main-banner .item span.category {
@@ -1896,8 +1908,9 @@ body {
 
   .main-banner .owl-nav {
     left: 50% !important;
-    transform: translateX(-60px) !important;
-    bottom: 60px;
+    transform: translateX(-62px) !important;
+    bottom: 64px;
+    padding: 7px;
   }
 
   .main-banner .owl-nav .owl-prev i {
@@ -2132,7 +2145,7 @@ body {
   line-height: 40px;
   font-size: 18px;
   margin: 0px 10px;
-  
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -2169,13 +2182,55 @@ input::placeholder {
   color: #888;
 }
 
+@media only screen and (max-width: 575px) and (min-width: 214px) {
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 
+  .fun-facts h2 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+  }
 
+  /* .fun-facts:before {
+    width: 0%;
+  }
 
+  .fun-facts::before {
+    width: 0%;
+  } */
 
+  .fun-facts:before {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #290275;
+    content: '';
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+  }
 
+  .fun-facts:after {
+    background: url(../images/contact-dec-01.png);
+    position: absolute;
+    left: 15%;
+    opacity: 0.5;
+    top: 0;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+  }
 
-
-
-
-
+  .fun-facts p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1px;
+  }
+}
