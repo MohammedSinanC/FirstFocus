@@ -181,7 +181,7 @@ p {
 
 img {
   width: 100%;
-  height: 200px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -809,14 +809,47 @@ Banner Style
 --------------------------------------------- 
 */
 
-.main-banner {
-  background-image: url(../images/banner-bg.png);
+/*.main-banner {
+ 
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 244px 0px 120px 0px;
+  
+}*/
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+
 }
 
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure video stays behind the content */
+ 
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Make sure content is above the video */
+  color: white; /* Set text color for contrast */
+  text-align: center;
+  margin-top: 300px;
+
+}
+
+.content p,h1{ color: #fff;}
+.content h1 {font-size: 55px;}
+.content p { font-size: 18px; font-weight: 500; margin-top: 10px;}
 .main-banner .item-1 {
   background-image: url(../images/banner-item-02.jpg);
 }
@@ -951,9 +984,11 @@ Services Style
 
 .services .service-item {
   position: relative;
-  margin-top: 95px;
+  margin-top: 0;
 }
-
+.services {
+  margin-top:  -150px ;
+}
 .services .service-item .icon {
   width: 129px;
   height: 142px;
@@ -961,10 +996,11 @@ Services Style
   text-align: center;
   line-height: 145px;
   background-color: #290275;
-  border-radius: 32%;
+  border-radius: 20%;
   position: absolute;
   right: 0px;
   top: -60px;
+  border: #bcbbbb 2px solid;
 }
 
 .services .service-item .icon img {
@@ -1201,11 +1237,30 @@ Courses Style
   font-weight: 700;
 }
 
-.events_item .thumb span.price em {
-  font-size: 18px;
-  font-weight: 500;
-  font-style: normal;
-  vertical-align: top;
+
+.work img{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.work .card {
+border: none;
+background-color:#f1f0fe;
+border-radius: 20px;
+}
+
+.work h5{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 30px;
+  transition: all .4s;
+  margin-top: 0px;
+  font-family: 'Poppins';
+}
+.work p {
+   font-family: 'Poppins';
+   color: #4a4a4a;
+   margin-bottom: 25px;
 }
 
 .events_item {
@@ -1342,6 +1397,10 @@ Facts Style
   max-height: 12em;
 }
 
+.work {
+
+  font-family: "";
+}
 /* 
 ---------------------------------------------
 Team Style
@@ -1369,6 +1428,7 @@ Team Style
   left: 49%;
   transform: translateX(-110px);
   transition: all .1s;
+  height: 200px !important;
 }
 
 .team-member .main-content {
@@ -1390,7 +1450,7 @@ Team Style
   padding-left: 10px;
   margin-left: -11px;
   margin-top: 7px;
-  color: #290275;
+  color: #000;
   text-align: justify;
 }
 
