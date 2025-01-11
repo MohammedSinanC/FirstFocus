@@ -821,7 +821,8 @@ Banner Style
 .video-background {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  /* Full viewport height */
   overflow: hidden;
 
 }
@@ -834,22 +835,37 @@ Banner Style
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  z-index: -1; /* Ensure video stays behind the content */
- 
+  z-index: -1;
+  /* Ensure video stays behind the content */
+
 }
 
 .content {
   position: relative;
-  z-index: 1; /* Make sure content is above the video */
-  color: white; /* Set text color for contrast */
+  z-index: 1;
+  /* Make sure content is above the video */
+  color: white;
+  /* Set text color for contrast */
   text-align: center;
   margin-top: 300px;
 
 }
 
-.content p,h1{ color: #fff;}
-.content h1 {font-size: 55px;}
-.content p { font-size: 18px; font-weight: 500; margin-top: 10px;}
+.content p,
+h1 {
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 55px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 .main-banner .item-1 {
   background-image: url(../images/banner-item-02.jpg);
 }
@@ -986,9 +1002,11 @@ Services Style
   position: relative;
   margin-top: 0;
 }
+
 .services {
-  margin-top:  -150px ;
+  margin-top: -150px;
 }
+
 .services .service-item .icon {
   width: 129px;
   height: 142px;
@@ -1238,17 +1256,18 @@ Courses Style
 }
 
 
-.work img{
+.work img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
+
 .work .card {
-border: none;
-background-color:#f1f0fe;
-border-radius: 20px;
+  border: none;
+  background-color: #f1f0fe;
+  border-radius: 20px;
 }
 
-.work h5{
+.work h5 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -1257,10 +1276,11 @@ border-radius: 20px;
   margin-top: 0px;
   font-family: 'Poppins';
 }
+
 .work p {
-   font-family: 'Poppins';
-   color: #4a4a4a;
-   margin-bottom: 25px;
+  font-family: 'Poppins';
+  color: #4a4a4a;
+  margin-bottom: 25px;
 }
 
 .events_item {
@@ -1401,6 +1421,7 @@ Facts Style
 
   font-family: "";
 }
+
 /* 
 ---------------------------------------------
 Team Style
@@ -1724,7 +1745,7 @@ Contact Style
 
 .contact-us .contact-us-content {
   border-radius: 25px;
-  padding: 80px;
+  padding: 33px;
   background-color: #290275;
   position: relative;
   z-index: 1;
@@ -1844,7 +1865,7 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
+  margin-top: 80px;
   position: relative;
   background-color: #290275;
   vertical-align: middle;
@@ -1854,7 +1875,7 @@ footer {
 
 footer p {
   text-align: center;
-  line-height: 80px;
+  line-height: 30px;
   color: #fff;
   font-weight: 400;
 }
@@ -2045,7 +2066,7 @@ body {
   }
 
   .team {
-    margin-top: 160px;
+    margin-bottom: -86px;
   }
 
   .team-member {
@@ -2130,9 +2151,10 @@ body {
 
   .contact-us .section-heading {
     margin-right: 0px;
+    margin-top: 110px;
   }
 
-  .contact-us .contact-us-content {
+  s .contact-us .contact-us-content {
     padding: 30px;
   }
 
@@ -2158,6 +2180,10 @@ body {
 .icon_1 {
   position: relative;
 }
+  
+.card-img-container img {
+  max-height: 350px;
+}
 
 .icon_1:hover img {
   top: -120px;
@@ -2174,9 +2200,7 @@ body {
 }
 
 .icon_1 .main-content {
-  border-radius: -50px;
   padding: 0px 30px 40px 30px;
-  background-color: #f1f0fe;
   text-align: center;
 }
 
@@ -2293,4 +2317,150 @@ input::placeholder {
     font-weight: 400;
     margin-top: 1px;
   }
+}
+
+.section-heading {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 512px) and (min-width: 10px) {
+  .input-group {
+    gap: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 10px) {
+  .contact-us .container .row {
+    gap: 44px;
+  }
+
+  .contact-us {
+    margin-top: 0px;
+  }
+
+  .section-heading {
+    background-color: #f1f0fe;
+    padding: 20px;
+  }
+}
+
+.contact-form {
+  /* background-color: #2c217e; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  /* max-width: 400px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #3a2d91;
+  color: white;
+  font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #d3c9f3;
+}
+
+.contact-form button {
+  background-color: #5b4ecb;
+  color: white;
+  /* font-size: 16px; */
+  /* font-weight: bold; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #483bb5;
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 15px;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+  /* Center cards within the container */
+}
+
+.card {
+  background-color: #f1f0fe;
+  color: #2f3b52;
+  /* border-radius: 15px; */
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  max-height: 350px !important;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+/* 
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+} */
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* .card-content span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff5e57;
+  margin-bottom: 10px;
+} */
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: 15px;
+  }
+}
+
+.card {
+  border: none; /* Removes the border */
+  box-shadow: none; /* Removes the shadow */
 }
