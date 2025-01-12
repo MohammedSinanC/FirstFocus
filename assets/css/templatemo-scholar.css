@@ -207,7 +207,7 @@ body {
 
 .section {
   padding-top: 0px;
-  margin-top: 68px;
+  margin-top: 42px;
 }
 
 .description {
@@ -821,7 +821,8 @@ Banner Style
 .video-background {
   position: relative;
   clip-path: polygon(0% 0%, 641% -11%, 0% 100%);
-  background: linear-gradient(to bottom, #3498db, #2c3e50); /* Gradient for cone effect */
+  background: linear-gradient(to bottom, #3498db, #2c3e50);
+  /* Gradient for cone effect */
 
   width: 100%;
   height: 100vh;
@@ -1180,8 +1181,9 @@ Courses Style
 */
 
 .courses {
-  margin-top: 160px;
+  margin-top: 102px;
 }
+
 
 .event_filter {
   text-align: center;
@@ -1283,7 +1285,7 @@ Courses Style
 .work p {
   font-family: 'Poppins';
   color: #4a4a4a;
-  margin-bottom: 25px;
+  margin-bottom: 2px;
 }
 
 .events_item {
@@ -1432,7 +1434,7 @@ Team Style
 */
 
 .team {
-  margin-top: 100px;
+  margin-top: 75px;
   padding-top: 0px;
 }
 
@@ -1737,6 +1739,7 @@ Contact Style
 .contact-us .section-heading {
   margin-right: 110px;
   margin-bottom: 0px;
+  padding: 43px;
 }
 
 .contact-us .section-heading p {
@@ -1960,7 +1963,7 @@ body {
 
   }
 
- 
+
 
   .main-banner .item {
     padding: 100px 60px 140px 60px;
@@ -2181,7 +2184,7 @@ body {
 .icon_1 {
   position: relative;
 }
-  
+
 .card-img-container img {
   max-height: 350px;
 }
@@ -2436,6 +2439,7 @@ input::placeholder {
 .card-content {
   padding: 20px;
 }
+
 /* 
 .card-content h3 {
   font-size: 18px;
@@ -2462,6 +2466,53 @@ input::placeholder {
 }
 
 .card {
-  border: none; /* Removes the border */
-  box-shadow: none; /* Removes the shadow */
+  border: none;
+  /* Removes the border */
+  box-shadow: none;
+  /* Removes the shadow */
+}
+
+.container {
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  background: #F8F5FF;
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: #FFFFFF;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon {
+  color: #2A0054;
+  margin-bottom: 0rem;
+  width: 77px;
+  height: 47px;
+}
+
+.title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
 }
