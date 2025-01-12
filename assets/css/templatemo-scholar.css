@@ -820,6 +820,9 @@ Banner Style
 
 .video-background {
   position: relative;
+  clip-path: polygon(0% 0%, 641% -11%, 0% 100%);
+  background: linear-gradient(to bottom, #3498db, #2c3e50); /* Gradient for cone effect */
+
   width: 100%;
   height: 100vh;
   /* Full viewport height */
@@ -1957,9 +1960,7 @@ body {
 
   }
 
-  .main-banner {
-    padding-top: 100px;
-  }
+ 
 
   .main-banner .item {
     padding: 100px 60px 140px 60px;
