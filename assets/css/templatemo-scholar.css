@@ -225,10 +225,10 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 36px;
+  font-size: 27px;
   font-weight: 600;
   text-transform: capitalize;
-  margin: 20px 0;
+  margin: 12px 0;
   line-height: 44px;
 }
 
@@ -239,7 +239,7 @@ body {
 
 .section-heading h6 {
   color: #7a6ad8;
-  font-size: 14px;
+  font-size: 28px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -681,6 +681,41 @@ Header Style
 
 }
 
+.card-body button {
+  border: none;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #5b4ecb;
+  padding: 0px 25px;
+  border-radius: 11px 7px 11px 7px;
+  color: #faf7fc;
+  transition: all .4s;
+  position: relative;
+  z-index: 3;
+  /* padding-top: 7px; */
+}
+
+.video-background button {
+  border: none;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #5b4ecb;
+  padding: 0px 25px;
+  border-radius: 11px;
+  color: #faf7fc;
+  transition: all .4s;
+  position: relative;
+  z-index: 3;
+  /* padding-top: 7px; */
+}
+
+
+.card-session-button{
+  padding-top: 20px;
+}
+
 @media (max-width: 767px) {
 
   .background-header .main-nav .nav,
@@ -861,7 +896,7 @@ h1 {
 }
 
 .content h1 {
-  font-size: 55px;
+  font-size: 51px;
 }
 
 .content p {
@@ -1012,24 +1047,24 @@ Services Style
 }
 
 .services .service-item .icon {
-  width: 129px;
-  height: 142px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
   text-align: center;
-  line-height: 145px;
+  line-height: 122px;
   background-color: #290275;
-  border-radius: 20%;
+  border-radius: 14%;
   position: absolute;
   right: 0px;
-  top: -60px;
-  border: #bcbbbb 2px solid;
+  top: -37px;
+  border: #bcbbbb 1px solid;
 }
-
 .services .service-item .icon img {
-  max-width: 87px;
+  max-width: 86px;
   max-height: 96px;
   transition: all .2s;
-  padding: 17px;
+  padding: 18px;
+  padding-bottom: 37px;
 }
 
 .services .service-item .main-content {
@@ -1389,6 +1424,32 @@ Facts Style
 }
 
 
+.video-background {
+  position: relative;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.video-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for opacity */
+  z-index: 1;
+}
+
+
 .team-member_icon .main-content {
   border-radius: 25px;
   /* padding: 140px 30px 40px 30px; */
@@ -1404,15 +1465,14 @@ Facts Style
 }
 
 .services .service-item .main-content {
-  border-radius: 25px;
-  padding: 80px 30px 50px 30px;
+  border-radius: 11px;
+  padding: 52px 30px 126px 30px;
   background-color: #f1f0fe;
-  margin-bottom: 30px;
+  margin-bottom: -18px;
   margin-right: 20px;
-  height: 350px;
+  height: 260px;
   transition: all .4s;
 }
-
 .service-item .main-content .description {
   display: -webkit-box;
   -webkit-line-clamp: 6;
@@ -1420,6 +1480,9 @@ Facts Style
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 12em;
+}
+.main-banner .content span{
+  font-weight: 100s;
 }
 
 .work {
@@ -1743,9 +1806,12 @@ Contact Style
 }
 
 .contact-us .section-heading p {
-  margin-top: 50px;
+  margin-top: 19px;
 }
 
+.section-heading p {
+  font-size: 18px;
+}
 
 
 
