@@ -113,6 +113,10 @@ html[xmlns] .clearfix {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * html .clearfix {
   height: 1%;
 
@@ -2018,7 +2022,9 @@ body {
     display: inline-block;
     margin: 0px 10px;
   }
-  .cursor-dot, .cursor-dot-outline{
+
+  .cursor-dot,
+  .cursor-dot-outline {
     display: none;
   }
 }
@@ -2895,19 +2901,26 @@ img {
 }
 
 .whatsapp-icon svg {
-  width: 28px; /* Adjusted width */
+  width: 28px;
+  /* Adjusted width */
   height: 28px;
   fill: white;
-  animation: move-up-down 2s infinite ease-in-out; /* Animation applied */
+  animation: move-up-down 2s infinite ease-in-out;
+  /* Animation applied */
 }
 
 /* Keyframes for the up and down motion */
 @keyframes move-up-down {
-  0%, 100% {
-    transform: translateY(0); /* Starting and ending position */
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Starting and ending position */
   }
+
   50% {
-    transform: translateY(-5px); /* Move up */
+    transform: translateY(-5px);
+    /* Move up */
   }
 }
 
